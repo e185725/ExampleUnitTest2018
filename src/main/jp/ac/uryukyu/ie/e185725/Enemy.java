@@ -19,17 +19,26 @@ public class Enemy extends LivingThing{
      * @param attack モンスターの攻撃力
      */
     public Enemy (String name, int maximumHP, int attack) {
-        this.name = name;
-        this.hitPoint = maximumHP;
-        this.attack = attack;
-        dead = false;
+        super.setName(name);
+        super.getName();
+        super.setHitPoint(maximumHP);
+        super.getHitPoint();
+        super.setAttack(attack);
+        super.getAttack();
+        super.setDead(false);
+        super.getDead();
+
+
+
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
         public void wounded(int damege){
+
         super.wounded(damege);
 
-        if (hitPoint < 0) {
-            System.out.println(name+"モンスター%sは倒れた。");
+
+        if (super.getHitPoint() < 0) {
+            System.out.println(super.getName()+"モンスター%sは倒れた。");
         }
 
     }

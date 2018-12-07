@@ -18,11 +18,16 @@ package jp.ac.uryukyu.ie.e185725;
          * @param maximumHP ヒーローのHP
          * @param attack ヒーローの攻撃力
          */
+
         public Hero (String name, int maximumHP, int attack) {
-            this.name = name;
-            this.hitPoint = maximumHP;
-            this.attack = attack;
-            dead = false;
+            super.setName(name);
+            super.getName();
+            super.setHitPoint(maximumHP);
+            super.getHitPoint();
+            super.setAttack(attack);
+            super.getAttack();
+            super.setDead(false);
+            super.getDead();
             System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
         }
 
@@ -37,8 +42,8 @@ package jp.ac.uryukyu.ie.e185725;
         public void wounded(int damege){
             super.wounded(damege);
 
-            if (hitPoint < 0) {
-                System.out.println(name+"は道半ばで力尽きてしまった。");
+            if (super.getHitPoint() < 0) {
+                System.out.println(1+"は道半ばで力尽きてしまった。");
             }
 
         }

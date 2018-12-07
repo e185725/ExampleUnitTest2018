@@ -7,8 +7,11 @@ package jp.ac.uryukyu.ie.e185725;
 public class Main {
     ////////
     public static void main(String[] args){
-        Hero hero = new Hero("勇者", 2, 5);
-        Enemy enemy = new Enemy("スライム", 10, 2);
+        LivingThing get1 = new LivingThing();
+        get1.setName("aaa");
+        System.out.println(get1.getName());
+        Hero hero = new Hero("勇者", 10, 5);
+        Enemy enemy = new Enemy("スライム", 6, 3);
         LivingThing lt = new LivingThing();
         lt.getName();
 
